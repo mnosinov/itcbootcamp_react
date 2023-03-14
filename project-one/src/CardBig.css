@@ -36,6 +36,7 @@
 .social-media-icon * {
 	height: 30px;
 	width: 30px;
+	color: #198ef2;
 }
 
 .card-middle {
@@ -64,4 +65,8 @@
 	display: flex;
 	justify-content: center;
 	gap: 5px;
+}
+
+.negative-trend {
+	color: red;
 }

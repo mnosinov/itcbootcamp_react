@@ -1,16 +1,18 @@
 import './App.css';
 import Header from './Header';
 import CardBig from './CardBig';
+import { data } from './data.js';
 
 function App() {
   return (
     <div className="App">
 			<Header/>
 			<div className="cards-container">
-				<CardBig/>
-				<CardBig/>
-				<CardBig/>
-				<CardBig/>
+				{
+					data.map( (card) => {
+						return <CardBig card={card}/>;
+					})
+				}
 			</div>
     </div>
   );

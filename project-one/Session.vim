@@ -175,7 +175,7 @@ argglobal
 %argdel
 edit src/data.js
 argglobal
-balt src/App.js
+balt src/CardBig.js
 lnoremap <buffer> " Э
 lnoremap <buffer> # №
 lnoremap <buffer> $ ;
@@ -384,29 +384,29 @@ setlocal nowinfixwidth
 set nowrap
 setlocal nowrap
 setlocal wrapmargin=0
-let s:l = 5 - ((4 * winheight(0) + 23) / 47)
+let s:l = 3 - ((2 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 5
-normal! 084|
+keepjumps 3
+normal! 0
 tabnext 1
 badd +1 README.md
 badd +11 package.json
 badd +13 src/index.js
 badd +27 public/index.html
 badd +1 src/index.css
-badd +11 src/App.js
+badd +7 src/App.js
 badd +7 src/Header.js
 badd +9 src/header.js
 badd +26 src/App.css
 badd +10 src/Header.css
 badd +1 src/Slider.js
 badd +23 src/Slider.css
-badd +4 src/CardBig.js
-badd +11 src/CardBig.css
+badd +21 src/CardBig.js
+badd +71 src/CardBig.css
 badd +1 .gitignore
-badd +0 src/data.js
+badd +10 src/data.js
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
