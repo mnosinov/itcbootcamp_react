@@ -173,9 +173,9 @@ endif
 set shortmess=aoO
 argglobal
 %argdel
-edit src/CardBig.js
+edit src/App.js
 argglobal
-balt src/App.js
+balt src/data.js
 lnoremap <buffer> " Э
 lnoremap <buffer> # №
 lnoremap <buffer> $ ;
@@ -386,29 +386,37 @@ setlocal nowrap
 setlocal wrapmargin=0
 7
 normal! zo
-let s:l = 8 - ((7 * winheight(0) + 23) / 47)
+8
+normal! zo
+9
+normal! zo
+11
+normal! zo
+12
+normal! zo
+let s:l = 13 - ((12 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 8
-normal! 07|
+keepjumps 13
+normal! 0
 tabnext 1
 badd +1 README.md
 badd +11 package.json
 badd +13 src/index.js
 badd +27 public/index.html
 badd +1 src/index.css
-badd +9 src/App.js
+badd +13 src/App.js
 badd +7 src/Header.js
 badd +9 src/header.js
 badd +26 src/App.css
 badd +10 src/Header.css
 badd +1 src/Slider.js
 badd +23 src/Slider.css
-badd +22 src/CardBig.js
+badd +6 src/CardBig.js
 badd +71 src/CardBig.css
 badd +1 .gitignore
-badd +3 src/data.js
+badd +8 src/data.js
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif

@@ -10,7 +10,7 @@ function App() {
 			<div className="cards-container">
 				{
 					data.map( (card) => {
-						return <CardBig card={card}/>;
+						return <CardBig key={card.id} card={card}/>;
 					})
 				}
 			</div>
