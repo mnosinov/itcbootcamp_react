@@ -1,7 +1,66 @@
 .card {
 	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
 	width: 22%;
 	height: 250px;
-	background-color: aqua;
+	background-color: #252b43;
 	border-radius: 6px;
+	padding: 20px;
+}
+
+.top-color-line {
+	background-color: blue;
+	width: 100%;
+	height: 10px;
+
+}
+
+.card-top {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #7c86a9;
+	font-weight: bold;
+	gap: 5px;
+}
+
+.social-media-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+.social-media-icon * {
+	height: 30px;
+	width: 30px;
+}
+
+.card-middle {
+}
+
+.card-middle .card-number {
+	font-size: 3.5rem;
+	color: white;
+	font-weight: bold;
+}
+
+.card-middle .card-text {
+	color: #7c86a9;
+	font-size: 1rem;
+	font-weight: bold;
+	letter-spacing: 0.5rem;
+	text-transform: uppercase;
+}
+
+.card-bottom {
+	color: #2e6968;
+	font-weight: bold;
+}
+
+.card-bottom .card-number {
+	display: flex;
+	justify-content: center;
+	gap: 5px;
 }
