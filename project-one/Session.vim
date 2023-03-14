@@ -175,7 +175,7 @@ argglobal
 %argdel
 edit src/CardBig.js
 argglobal
-balt package.json
+balt .gitignore
 lnoremap <buffer> " Э
 lnoremap <buffer> # №
 lnoremap <buffer> $ ;
@@ -271,7 +271,7 @@ setlocal cinwords=if,else,while,do,for,switch
 set colorcolumn=81
 setlocal colorcolumn=81
 setlocal comments=sO:*\ -,mO:*\ \ ,exO:*/,s1:/*,mb:*,ex:*/,://
-setlocal commentstring=//%s
+setlocal commentstring={/*\ %s\ */}
 setlocal complete=.,w,b,u,t,i
 setlocal concealcursor=
 setlocal conceallevel=0
@@ -388,12 +388,14 @@ setlocal wrapmargin=0
 normal! zo
 7
 normal! zo
-let s:l = 3 - ((2 * winheight(0) + 23) / 47)
+8
+normal! zo
+let s:l = 17 - ((16 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 3
-normal! 046|
+keepjumps 17
+normal! 09|
 tabnext 1
 badd +1 README.md
 badd +11 package.json
@@ -407,8 +409,9 @@ badd +13 src/App.css
 badd +31 src/Header.css
 badd +1 src/Slider.js
 badd +32 src/Slider.css
-badd +4 src/CardBig.js
+badd +3 src/CardBig.js
 badd +6 src/CardBig.css
+badd +1 .gitignore
 if exists('s:wipebuf') && len(win_findbuf(s:wipebuf)) == 0
   silent exe 'bwipe ' . s:wipebuf
 endif
