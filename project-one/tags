@@ -40,7 +40,7 @@ $	Session.vim	/^lnoremap <buffer> $ ;$/;"	m
 ,u	Session.vim	/^nmap <silent> ,u <Plug>(emmet-update-tag)$/;"	m
 .	Session.vim	/^lnoremap <buffer> . ю$/;"	m
 /	Session.vim	/^lnoremap <buffer> \/ .$/;"	m
-088|	Session.vim	/^normal! 088|$/;"	m
+018|	Session.vim	/^normal! 018|$/;"	m
 :	Session.vim	/^lnoremap <buffer> : Ж$/;"	m
 ;	Session.vim	/^lnoremap <buffer> ; ж$/;"	m
 <C-G>	Session.vim	/^nnoremap <C-G> :Rg$/;"	m
@@ -184,7 +184,7 @@ q	Session.vim	/^lnoremap <buffer> q й$/;"	m
 r	Session.vim	/^lnoremap <buffer> r к$/;"	m
 s	Session.vim	/^lnoremap <buffer> s ы$/;"	m
 s:cpo_save	Session.vim	/^let s:cpo_save=&cpo$/;"	v
-s:l	Session.vim	/^let s:l = 21 - ((20 * winheight(0) + 23) \/ 47)$/;"	v
+s:l	Session.vim	/^let s:l = 6 - ((5 * winheight(0) + 23) \/ 47)$/;"	v
 s:so_save	Session.vim	/^let s:so_save = &g:so | let s:siso_save = &g:siso | setg so=0 siso=0 | setl so=-1 siso=-1$/;"	v
 s:sx	Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
 s:wipebuf	Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v

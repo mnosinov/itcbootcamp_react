@@ -6,7 +6,7 @@ import { data } from './data.js';
 function App() {
   return (
     <div className="App">
-			<Header/>
+			{ Header() }
 			<div className="cards-container">
 				{
 					data.map( (card) => {

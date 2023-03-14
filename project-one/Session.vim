@@ -175,7 +175,7 @@ argglobal
 %argdel
 edit src/CardBig.js
 argglobal
-balt src/data.js
+balt src/App.js
 lnoremap <buffer> " Э
 lnoremap <buffer> # №
 lnoremap <buffer> $ ;
@@ -386,34 +386,26 @@ setlocal nowrap
 setlocal wrapmargin=0
 7
 normal! zo
-10
-normal! zo
-10
-normal! zo
-11
-normal! zo
-20
-normal! zo
-let s:l = 9 - ((8 * winheight(0) + 23) / 47)
+let s:l = 8 - ((7 * winheight(0) + 23) / 47)
 if s:l < 1 | let s:l = 1 | endif
 keepjumps exe s:l
 normal! zt
-keepjumps 9
-normal! 03|
+keepjumps 8
+normal! 07|
 tabnext 1
 badd +1 README.md
 badd +11 package.json
 badd +13 src/index.js
 badd +27 public/index.html
 badd +1 src/index.css
-badd +7 src/App.js
+badd +9 src/App.js
 badd +7 src/Header.js
 badd +9 src/header.js
 badd +26 src/App.css
 badd +10 src/Header.css
 badd +1 src/Slider.js
 badd +23 src/Slider.css
-badd +21 src/CardBig.js
+badd +22 src/CardBig.js
 badd +71 src/CardBig.css
 badd +1 .gitignore
 badd +3 src/data.js
