@@ -6,7 +6,6 @@ import { VscTriangleUp, VscTriangleDown } from 'react-icons/vsc';
 const CardBig = (props) => {
 	console.log(props);
 	const { card } = props;
-	const todayStyle = 'card-number' + (card.today >= 0 ? '' : ' negative-trend');
 	return (
 			<div className="card">
 				<div className="card-top">
@@ -18,7 +17,7 @@ const CardBig = (props) => {
 					<div className="card-text">{ card.followers }</div>
 				</div>
 				<div className="card-bottom">
-					<div className={todayStyle}>
+					<div className={ card.today > 0 ? "card-number" : "card-number negative-trend"}>
 						{ card.today >= 0 ? <VscTriangleUp/> : <VscTriangleDown/> } { Math.abs(card.today) }
 					</div>
 				</div>
