@@ -11,14 +11,6 @@ function App() {
 				<CardBig/>
 				<CardBig/>
 				<CardBig/>
-				<CardBig/>
-				<CardBig/>
-				<CardBig/>
-				<CardBig/>
-				<CardBig/>
-				<CardBig/>
-				<CardBig/>
-				<CardBig/>
 			</div>
     </div>
   );
