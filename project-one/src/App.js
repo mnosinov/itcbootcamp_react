@@ -18,12 +18,8 @@ function App() {
 
   return (
     <div className="App">
-			<button className="clicker-btn" onClick={incrementer}>
-				clicker+
-			</button>
-			<button className="clicker-btn" onClick={decrementer}>
-				clicker-
-			</button>
+			<button className="clicker-btn" onClick={incrementer}>clicker+</button>
+			<button className="clicker-btn" onClick={decrementer}>clicker-</button>
 			<h1>{increment}</h1>
 			<Header/>
 			<div className="cards-container">
