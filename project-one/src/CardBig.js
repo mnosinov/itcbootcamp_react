@@ -3,7 +3,7 @@ import './CardBig.css';
 import { AiFillFacebook } from 'react-icons/ai';
 import { VscTriangleUp, VscTriangleDown } from 'react-icons/vsc';
 
-const CardBig = ({ card: { profile, today, icon: Icon, followers, numOfFollowers } }) => {
+const CardBig = ({ increment, decrement, card: { profile, today, icon: Icon, followers, numOfFollowers } }) => {
 	return (
 		<div className="card">
 			<div className="card-top">
@@ -15,8 +15,8 @@ const CardBig = ({ card: { profile, today, icon: Icon, followers, numOfFollowers
 				<div className="card-text">{ followers }</div>
 			</div>
 			<div className="card-bottom">
-				<div className={ today > 0 ? "card-number" : "card-number negative-trend"}>
-					{ today >= 0 ? <VscTriangleUp/> : VscTriangleDown() } { Math.abs(today) }
+				<div className={ today + increment - decrement  >= 0 ? "card-number" : "card-number negative-trend"}>
+					{ today  + increment - decrement >= 0 ? <VscTriangleUp/> : VscTriangleDown() } { Math.abs(today + increment - decrement ) }
 				</div>
 			</div>
 		</div>

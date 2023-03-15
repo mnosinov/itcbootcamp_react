@@ -6,23 +6,31 @@ import { data } from './data.js';
 import { useState } from 'react';
 
 function App() {
-	const [increment, setIncrement] = useState(10);
+	const [increment, setIncrement] = useState(0);
+	const [decrement, setDecrement] = useState(0);
 
 	function incrementer() {
 		setIncrement(increment + 1);
 	}
 
+	function decrementer() {
+		setDecrement(decrement + 1);
+	}
+
   return (
     <div className="App">
 			<button className="clicker-btn" onClick={incrementer}>
-				clicker
+				clicker+
+			</button>
+			<button className="clicker-btn" onClick={decrementer}>
+				clicker-
 			</button>
 			<h1>{increment}</h1>
 			<Header/>
 			<div className="cards-container">
 				{
 					data.map( (card) => {
-						return <CardBig key={card.id} card={card}/>;
+						return <CardBig decrement={decrement} increment={increment} key={card.id} card={card}/>;
 					})
 				}
 			</div>

@@ -15,7 +15,7 @@ export const data = [
 		pageViews: 52000, pageViewsLabel: 'Profile Views', pageViewsDelta: -1375, likes: 5462, likesDelta: 2257
 	},
 	{
-		id: 4, profile: 'Nathan F.', icon: FaYoutube, numOfFollowers: 8239, followers: 'SUBSCRIBERS', today: -144, pageViews: 87,
+		id: 4, profile: 'Nathan F.', icon: FaYoutube, numOfFollowers: 8239, followers: 'SUBSCRIBERS', today: -14, pageViews: 87,
 		pageViews: 1407000, pageViewsLabel: 'Total Views', pageViewsDelta: -12, likes: 107, likesDelta: -19
 	}
 ];
