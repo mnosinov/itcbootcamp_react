@@ -16,6 +16,6 @@ export const data = [
 	},
 	{
 		id: 4, profile: 'Nathan F.', icon: FaYoutube, numOfFollowers: 8239, followers: 'SUBSCRIBERS', today: -144, pageViews: 87,
-		pageViews: 1407, pageViewsLabel: 'Total Views', pageViewsDelta: -12, likes: 107, likesDelta: -19
+		pageViews: 1407000, pageViewsLabel: 'Total Views', pageViewsDelta: -12, likes: 107, likesDelta: -19
 	}
 ];

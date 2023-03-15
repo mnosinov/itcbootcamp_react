@@ -3,14 +3,19 @@ import './CardSmall.css';
 import { AiFillFacebook } from 'react-icons/ai';
 import { VscTriangleUp, VscTriangleDown } from 'react-icons/vsc';
 
-const CardSmall = (
-	{ card:
-		{
-			icon: Icon, pageViews, pageViewsLabel, pageViewsDelta, likes, likesDelta
-		},
-		type
+function numberFormatter(num) {
+	let numAbs = Math.abs(num);
+	if (numAbs > 9999 && numAbs <= 999999) {
+    return Math.sign(num)*((Math.abs(num)/1000).toFixed(1)) + 'k';
+	} if (numAbs > 999999 && numAbs <= 999999999) {
+    return Math.sign(num)*((Math.abs(num)/1000000).toFixed(1)) + 'm';
+	} else {
+    return num;
 	}
-	) => {
+
+}
+
+const CardSmall = ( { card: { icon: Icon, pageViews, pageViewsLabel, pageViewsDelta, likes, likesDelta }, type }) => {
 		if (type === 'pageViews') {
 			return (
 				<div className="card-small">
@@ -19,9 +24,9 @@ const CardSmall = (
 						<span className="social-media-icon">{<Icon/>}</span>
 					</div>
 					<div className="card-small-bottom">
-						<div className="card-info">{ pageViews }</div>
+						<div className="card-info">{ numberFormatter(pageViews) }</div>
 						<div className={ pageViewsDelta > 0 ? "card-number" : "card-number negative-trend"}>
-							{ pageViewsDelta >= 0 ? <VscTriangleUp/> : VscTriangleDown() } { Math.abs(pageViewsDelta) }
+							{ pageViewsDelta >= 0 ? <VscTriangleUp/> : VscTriangleDown() } { Math.abs(pageViewsDelta) + "%" }
 						</div>
 					</div>
 				</div>
@@ -34,7 +39,7 @@ const CardSmall = (
 						<span className="social-media-icon">{<Icon/>}</span>
 					</div>
 					<div className="card-small-bottom">
-						<div className="card-info">{ likes }</div>
+						<div className="card-info">{ numberFormatter(likes) }</div>
 						<div className={ likesDelta > 0 ? "card-number" : "card-number negative-trend"}>
 							{ likesDelta >= 0 ? <VscTriangleUp/> : VscTriangleDown() } { Math.abs(likesDelta) + "%" }
 						</div>
