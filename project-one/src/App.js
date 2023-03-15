@@ -7,13 +7,18 @@ import { useState } from 'react';
 
 function App() {
 	const [increment, setIncrement] = useState(0);
+	const [value, setValue] = useState(10);
 
 	function incrementer() {
-		setIncrement(increment + 1);
+		setIncrement(increment + value);
 	}
 
 	function decrementer() {
-		setIncrement(increment - 1);
+		setIncrement(increment - value);
+	}
+
+	function handleChange(e) {
+		setValue(Number(e.target.value));
 	}
 
   return (
@@ -21,6 +26,8 @@ function App() {
 			<button className="clicker-btn" onClick={incrementer}>clicker+</button>
 			<button className="clicker-btn" onClick={decrementer}>clicker-</button>
 			<h1>{increment}</h1>
+			<h1>{value}</h1>
+			<input type="number" value={value} onChange={handleChange}/>
 			<Header/>
 			<div className="cards-container">
 				{
