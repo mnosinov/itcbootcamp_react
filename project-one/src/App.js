@@ -7,14 +7,13 @@ import { useState } from 'react';
 
 function App() {
 	const [increment, setIncrement] = useState(0);
-	const [decrement, setDecrement] = useState(0);
 
 	function incrementer() {
 		setIncrement(increment + 1);
 	}
 
 	function decrementer() {
-		setDecrement(decrement + 1);
+		setIncrement(increment - 1);
 	}
 
   return (
@@ -30,7 +29,7 @@ function App() {
 			<div className="cards-container">
 				{
 					data.map( (card) => {
-						return <CardBig decrement={decrement} increment={increment} key={card.id} card={card}/>;
+						return <CardBig increment={increment} key={card.id} card={card}/>;
 					})
 				}
 			</div>
