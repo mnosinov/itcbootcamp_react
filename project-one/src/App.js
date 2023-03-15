@@ -3,11 +3,22 @@ import Header from './Header';
 import CardBig from './CardBig';
 import CardSmall from './CardSmall';
 import { data } from './data.js';
+import { useState } from 'react';
 
 function App() {
+	const [increment, setIncrement] = useState(10);
+
+	function incrementer() {
+		setIncrement(increment + 1);
+	}
+
   return (
     <div className="App">
-			{ Header() }
+			<button className="clicker-btn" onClick={incrementer}>
+				clicker
+			</button>
+			<h1>{increment}</h1>
+			<Header/>
 			<div className="cards-container">
 				{
 					data.map( (card) => {

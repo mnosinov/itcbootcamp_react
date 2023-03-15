@@ -4,8 +4,6 @@
 	box-sizing: border-box;
 }
 
-
-
 .App {
   text-align: center;
 	display: flex;
@@ -44,4 +42,18 @@
 	justify-content: flex-start;
 	color: white;
 	font-size: 1.3rem;
+}
+
+.clicker-btn {
+	width: 100px;
+	height: 30px;
+	border: 1px solid black;
+	color: black;
+	background-color: lightblue;
+	font-size: 16px;
+	font-weight: 600;
+	cursor: pointer;
+	border-radius: 6px;
+
+	text-transform: uppercase;
 }
