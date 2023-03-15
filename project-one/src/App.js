@@ -23,12 +23,12 @@ function App() {
 
   return (
     <div className="App">
+			<Header/>
 			<button className="clicker-btn" onClick={incrementer}>clicker+</button>
 			<button className="clicker-btn" onClick={decrementer}>clicker-</button>
 			<h1>{increment}</h1>
 			<h1>{value}</h1>
 			<input type="number" value={value} onChange={handleChange}/>
-			<Header/>
 			<div className="cards-container">
 				{
 					data.map( (card) => {
