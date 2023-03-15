@@ -20,9 +20,11 @@ function App() {
 			</div>
 			<div className="cards-small-container">
 				{
-					data.flatMap( (card) => {
-						return [<CardSmall key={10 + card.id} card={card} type="pageViews"/>, <CardSmall key={100 + card.id} card={card} type="likes"/>];
-					})
+					data.flatMap( (card) => [
+							<CardSmall key={10 + card.id} card={card} type="likes"/>,
+							<CardSmall key={100 + card.id} card={card} type="pageViews"/>
+						]
+					)
 				}
 			</div>
     </div>

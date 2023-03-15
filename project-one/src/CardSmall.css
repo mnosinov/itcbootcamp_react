@@ -1,7 +1,7 @@
 
 .cards-small-container {
 }
-.cards-small-container .card {
+.cards-small-container .card-small {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
@@ -21,10 +21,11 @@
 
 }
 
-.cards-small-container .card-top {
+.cards-small-container .card-small-top {
 	display: flex;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-between;
+	width: 100%;
 	color: #7c86a9;
 	font-weight: bold;
 	gap: 5px;
@@ -42,16 +43,7 @@
 	color: #198ef2;
 }
 
-.cards-small-container .card-middle {
-}
-
-.cards-small-container .card-middle .card-number {
-	font-size: 3.5rem;
-	color: white;
-	font-weight: bold;
-}
-
-.cards-small-container .card-middle .card-text {
+.cards-small-container .card-small-middle .card-text {
 	color: #7c86a9;
 	font-size: 1rem;
 	font-weight: bold;
@@ -59,12 +51,22 @@
 	text-transform: uppercase;
 }
 
-.cards-small-container .card-bottom {
+.cards-small-container .card-small-bottom {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
 	color: #2e6968;
 	font-weight: bold;
 }
 
-.cards-small-container .card-bottom .card-number {
+.cards-small-container .card-small-bottom .card-info {
+	font-size: 2rem;
+	color: white;
+}
+
+.cards-small-container .card-small-bottom .card-number {
+	font-weight: bold;
 	display: flex;
 	justify-content: center;
 	gap: 5px;
