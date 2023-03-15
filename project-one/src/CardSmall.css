@@ -1,27 +1,27 @@
-.cards-container {
-}
 
-.cards-container .card {
+.cards-small-container {
+}
+.cards-small-container .card {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-around;
 	align-items: center;
 	width: 22%;
-	height: 250px;
+	height: 150px;
 	background-color: #252b43;
 	border-radius: 6px;
 	padding: 20px;
 	cursor: pointer;
 }
 
-.cards-container .top-color-line {
+.cards-small-container .top-color-line {
 	background-color: blue;
 	width: 100%;
 	height: 10px;
 
 }
 
-.cards-container .card-top {
+.cards-small-container .card-top {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -30,28 +30,28 @@
 	gap: 5px;
 }
 
-.cards-container .social-media-icon {
+.cards-small-container .social-media-icon {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 
 }
-.cards-container .social-media-icon * {
+.cards-small-container .social-media-icon * {
 	height: 30px;
 	width: 30px;
 	color: #198ef2;
 }
 
-.cards-container .card-middle {
+.cards-small-container .card-middle {
 }
 
-.cards-container .card-middle .card-number {
+.cards-small-container .card-middle .card-number {
 	font-size: 3.5rem;
 	color: white;
 	font-weight: bold;
 }
 
-.cards-container .card-middle .card-text {
+.cards-small-container .card-middle .card-text {
 	color: #7c86a9;
 	font-size: 1rem;
 	font-weight: bold;
@@ -59,17 +59,17 @@
 	text-transform: uppercase;
 }
 
-.cards-container .card-bottom {
+.cards-small-container .card-bottom {
 	color: #2e6968;
 	font-weight: bold;
 }
 
-.cards-container .card-bottom .card-number {
+.cards-small-container .card-bottom .card-number {
 	display: flex;
 	justify-content: center;
 	gap: 5px;
 }
 
-.cards-container .negative-trend {
+.cards-small-container .negative-trend {
 	color: red;
 }
